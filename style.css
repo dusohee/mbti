@@ -265,6 +265,26 @@ button {
     align-items: center;
     justify-content: center;
     height: fit-content;
+    animation: bounce 0.6s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+.avatar:nth-child(2n-1) {
+    animation-delay: 0s;
+}
+.avatar:nth-child(2n) {
+    animation-delay: 0.3s;
+}
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-4px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
 }
 .avatarName {
     padding: 4px 8px;
@@ -283,6 +303,7 @@ button {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* 1 */
 .entp {
@@ -364,4 +385,9 @@ button {
 .entj {
     top: 85%;
     right: 30%;
+}
+
+.tag {
+    width: 90px;
+    display: flexbox;
 }
