@@ -397,6 +397,13 @@ button {
     flex-direction: row-reverse;
 }
 
+/* 15 */
+.mola {
+    top: 3%;
+    right: 24%;
+    width: 330px;
+}
+
 .tag {
     width: 90px;
     display: flexbox;
