@@ -305,6 +305,7 @@ button {
 }
 .avatarImage {
     width: 48px;
+    filter: saturate(1.1);
 }
 .town {
     position: absolute;
