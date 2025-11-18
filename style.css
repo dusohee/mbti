@@ -1,63 +1,69 @@
 /* 폰트 : 밋미 */
 @font-face {
-    font-family: 'MitmiFont';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-family: "MitmiFont";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2")
+        format("woff2");
     font-weight: normal;
     font-display: swap;
 }
 
 /* reset CSS */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "MitmiFont", sans-serif ;
-  -webkit-font-family: "MitmiFont";
-  -moz-font-family: "MitmiFont";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MitmiFont", sans-serif;
+    -webkit-font-family: "MitmiFont";
+    -moz-font-family: "MitmiFont";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 a {
-  cursor: pointer;
-  text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 span {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
 }
 
-h4{
- font-size: 44px;
+h4 {
+    font-size: 44px;
 }
-h3{
+h3 {
     font-size: 33px;
 }
 p {
-  font-size: 28px;
-  line-height: 1.5;
+    font-size: 28px;
+    line-height: 1.5;
 }
-button{
+button {
     font-size: 40px;
     color: #fff;
 }
 
 /* -------------첫번째 페이지------------- */
-.townLanding{
+.townLanding {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -68,106 +74,106 @@ button{
     align-items: center;
     justify-content: center;
 }
-.titleArea{
+.titleArea {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.prjTitle{
+.prjTitle {
     font-size: 100px;
 }
-.fontRed{
-    color: #E23623;
+.fontRed {
+    color: #e23623;
     letter-spacing: 8px;
 }
 
-.prjMenuGroup{
+.prjMenuGroup {
     display: flex;
     align-items: flex-end;
     gap: 120px;
 }
-.prjMenuItem{
+.prjMenuItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
 }
-.prjMenuItem:hover{
-  animation: floatUpDown 1.2s ease-in-out infinite;
-  filter:saturate(1.5);
+.prjMenuItem:hover {
+    animation: floatUpDown 1.2s ease-in-out infinite;
+    filter: saturate(1.5);
 }
-.prjMenuBtn{
+.prjMenuBtn {
     width: 235px;
     text-align: center;
     padding: 5px 35px;
     border-radius: 50px;
     border: none;
-    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
 }
-.blueBtn{
-    background-color: #41BCFA;
+.blueBtn {
+    background-color: #41bcfa;
 }
-.purpleBtn{
-    background-color: #837EF2;
+.purpleBtn {
+    background-color: #837ef2;
 }
-.redBtn{
-    background-color: #FA880C;
+.redBtn {
+    background-color: #fa880c;
 }
 
 /* 둥둥 떠오르는 애니메이션 */
 @keyframes floatUpDown {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
-
 /* -------------회사 분석 페이지------------- */
-.aboutPage{
+.aboutPage {
     width: 100%;
-    height: 100vh;
+    overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 120px;
+    gap: 80px;
+    padding: 80px 0 120px 0;
 }
-.pageTitleGroup{
+.pageTitleGroup {
     position: relative;
 }
-.pageTitle{
+.pageTitle {
     font-size: 80px;
 }
-.beeker{
+.beeker {
     position: absolute;
     top: -30px;
     left: -130px;
 }
-.chemical{
+.chemical {
     position: absolute;
     right: -200px;
     top: -45px;
 }
-.fontOrange{
-    color: #EA645E;
+.fontOrange {
+    color: #ea645e;
 }
-.showResult{
+.showResult {
     max-width: 1100px;
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
     padding: 45px 48px;
     border-radius: 32px;
     display: flex;
     align-items: center;
     gap: 55px;
 }
-.showCharac{
+.showCharac {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,59 +184,184 @@ button{
     border-radius: 200px;
     background-color: #fff;
 }
-.characLarge{
+.characLarge {
     width: 110px;
     height: auto;
     animation: floatUpDown 1.2s ease-in-out infinite;
 }
-.aboutCharac{
+.aboutCharac {
     width: 700px;
 }
 
 /* 디테일 분석 결과 */
-.resultDetail{
+.resultDetail {
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
 }
-.mbtiChart{
+.mbtiChart {
     width: 900px;
     height: 50px;
     display: flex;
 }
-.barChart{
+.barChart {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.label{
+.label {
     font-size: 45px;
     width: 30px;
 }
-.bar{
+.bar {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.org{
-    background-color: #FF7D72;
+.org {
+    background-color: #ff7d72;
 }
-.gre{
-    background-color: #98D363;
+.gre {
+    background-color: #98d363;
 }
-.blu{
-    background-color: #9CC5F9;
+.blu {
+    background-color: #9cc5f9;
 }
-.yel{
-    background-color: #FDD252;
+.yel {
+    background-color: #fdd252;
 }
-.pur{
-    background-color: #E1B9EE;
+.pur {
+    background-color: #e1b9ee;
 }
-.per{
+.per {
     font-size: 30px;
     color: #fff;
+}
+
+/* -------------mbti 타운 맵------------- */
+.map-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    cursor: grab;
+}
+.map-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.map-content {
+    width: 100%;
+    height: 100%;
+    background: url("./images/village.svg");
+    background-size: cover;
+    position: relative;
+}
+.avatar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.avatarName {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background-color: #464343;
+}
+.avatarName {
+    font-size: 15px;
+    color: #fff;
+}
+.avatarImage {
+    width: 50px;
+}
+.town {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* 1 */
+.entp {
+    top: 2%;
+    left: 2%;
+    width: 240px;
+}
+/* 2 */
+.enfj {
+    top: 3%;
+    left: 23%;
+    width: 150px;
+}
+/* 3 */
+.enfp {
+    width: 100px;
+    top: 4%;
+    left: 40%;
+    width: 400px;
+}
+/* 4 */
+.estj {
+    top: 50%;
+    right: 5%;
+    width: auto;
+}
+/* 5 */
+.estp {
+    top: 73%;
+    left: 27%;
+}
+/* 6 */
+.infj {
+    top: 60%;
+    right: 32%;
+}
+/* 7 */
+.infp {
+    top: 37%;
+    right: 30%;
+}
+/* 8 */
+.intj {
+    top: 38%;
+    left: 15%;
+    width: 300px;
+    justify-content: center;
+}
+/* 9 */
+.intp {
+    top: 75%;
+    left: 4%;
+    width: 200px;
+    justify-content: center;
+}
+/* 10 */
+.isfj {
+    top: 85%;
+    left: 38%;
+}
+/* 11 */
+.isfp {
+    top: 30%;
+    left: 40%;
+    width: 110px;
+    justify-content: center;
+}
+/* 12 */
+.istj {
+    top: 80%;
+    right: 6%;
+}
+/* 13 */
+.istp {
+    top: 15%;
+    right: 8%;
+}
+/* 14 */
+.entj {
+    top: 85%;
+    right: 30%;
 }
