@@ -451,3 +451,16 @@ button {
     cursor: pointer;
     color: #837ef2;
 }
+
+.home-btn {
+    width: 160px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: 0.5s;
+    border-radius: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.home-btn:hover {
+    transform: scale(1.1);
+}
