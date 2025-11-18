@@ -292,7 +292,7 @@ button {
     background-color: #464343;
 }
 .avatarName {
-    font-size: 15px;
+    font-size: 17px;
     color: #fff;
 }
 .avatarImage {
@@ -307,84 +307,86 @@ button {
 }
 /* 1 */
 .entp {
-    top: 2%;
-    left: 2%;
-    width: 240px;
+    top: 10%;
+    left: 3%;
+    width: 300px;
 }
 /* 2 */
 .enfj {
     top: 3%;
-    left: 23%;
+    left: 26%;
     width: 150px;
 }
 /* 3 */
 .enfp {
-    width: 100px;
-    top: 4%;
-    left: 40%;
-    width: 400px;
+    bottom: 6%;
+    left: 31%;
+    width: 240px;
 }
 /* 4 */
 .estj {
     top: 50%;
     right: 5%;
     width: auto;
+    flex-direction: row-reverse;
 }
 /* 5 */
 .estp {
-    top: 73%;
-    left: 27%;
+    top: 68%;
+    left: 18%;
 }
 /* 6 */
 .infj {
-    top: 60%;
-    right: 32%;
+    bottom: 3%;
+    right: 12%;
 }
 /* 7 */
 .infp {
-    top: 37%;
+    top: 75%;
     right: 30%;
 }
 /* 8 */
 .intj {
-    top: 38%;
-    left: 15%;
+    top: 12%;
+    right: 3%;
     width: 300px;
     justify-content: center;
+    flex-direction: row-reverse;
 }
 /* 9 */
 .intp {
-    top: 75%;
-    left: 4%;
+    top: 60%;
+    left: 2%;
     width: 200px;
     justify-content: center;
 }
 /* 10 */
 .isfj {
-    top: 85%;
-    left: 38%;
+    top: 87%;
+    left: 50%;
 }
 /* 11 */
 .isfp {
-    top: 30%;
-    left: 40%;
-    width: 110px;
+    top: 43%;
+    left: 4%;
     justify-content: center;
 }
 /* 12 */
 .istj {
-    top: 80%;
-    right: 6%;
+    top: 2%;
+    left: 40%;
+    width: 180px;
 }
 /* 13 */
 .istp {
-    top: 15%;
-    right: 8%;
+    top: 85%;
+    left: 13%;
 }
 /* 14 */
 .entj {
-    top: 85%;
-    right: 30%;
+    top: 70%;
+    right: 8%;
+    flex-direction: row-reverse;
 }
 
 .tag {
