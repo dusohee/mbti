@@ -404,10 +404,24 @@ button {
     right: 24%;
     width: 330px;
 }
-
+.mbti-message-area {
+    position: relative;
+}
 .tag {
     width: 90px;
     display: flexbox;
+}
+.mbti-message {
+    padding: 16px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 300px;
 }
 .search-area {
     position: absolute;
