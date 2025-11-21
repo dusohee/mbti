@@ -479,3 +479,47 @@ button {
 .home-btn:hover {
     transform: scale(1.1);
 }
+
+/* -------------화성에서 온 E, 금성에서 온 I------------- */
+.EvsI-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0a1d;
+}
+.EvsI-wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.planet-e {
+    width: 50%;
+    height: 100%;
+    background-image: url("./images/about/planet-e.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar-wrap {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.planet-i {
+    width: 50%;
+    height: 100%;
+    background-image: url("./images/about/planet-i.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+}
