@@ -33,11 +33,13 @@ export const employees = {
     { name: '병국' }
   ],
   infj: [
+    { name: '오종' },
     { name: '희곤' },
     { name: '보라' },
     { name: '진용' }
   ],
   infp: [
+    { name: '재훈' },
     { name: '원호' },
     { name: '도영' },
     { name: '태웅' },
@@ -60,6 +62,7 @@ export const employees = {
     { name: '수민' }
   ],
   isfj: [
+    { name: '원형' },
     { name: '현희' },
     { name: '현덕' },
     { name: '덕연' },
@@ -71,6 +74,7 @@ export const employees = {
     { name: '강희' }
   ],
   istj: [
+    { name: '문호' },
     { name: '수현' },
     { name: '광수' },
     { name: '윤철' }

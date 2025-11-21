@@ -150,27 +150,45 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 80px;
-    padding: 80px 0 120px 0;
+    gap: 70px;
+    padding: 120px 0;
 }
 .pageTitleGroup {
     position: relative;
 }
 .pageTitle {
-    font-size: 80px;
+    font-size: 68px;
 }
 .beeker {
     position: absolute;
-    top: -30px;
-    left: -130px;
+    top: -19px;
+    left: -109px;
+    width: 75px;
 }
 .chemical {
     position: absolute;
-    right: -200px;
-    top: -45px;
+    right: -153px;
+    top: -36px;
+    width: 120px;
 }
 .fontOrange {
     color: #ea645e;
+}
+.overview-Result {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 42px;
+    border-radius: 12px;
+    background-color: #f4f5fa;
+}
+.chart-result {
+    width: 100%;
+}
+.summary-result {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 30px;
+    text-align: center;
 }
 .showResult {
     max-width: 1100px;
@@ -564,7 +582,7 @@ button {
     height: 100%;
 }
 .planet-e {
-    width: 50%;
+    width: 45%;
     height: 100%;
     background-image: url("./images/about/planet-e.svg");
     background-size: contain;
@@ -573,9 +591,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 .avatar-wrap {
-    width: 50%;
+    width: 70%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -583,17 +603,30 @@ button {
     justify-content: center;
 }
 .planet-i {
-    width: 50%;
+    width: 55%;
     height: 100%;
     background-image: url("./images/about/planet-i.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 60px;
     align-items: center;
     justify-content: center;
+}
+.about-e {
+    font-size: 26px;
+    color: #fff;
+    background-color: #26185c;
+}
+.about-i {
+    font-size: 26px;
+    color: #fff;
+    margin-right: 15%;
+    background-color: #26185c;
 }
 
 /* 팀별 mbti 페이지 */
@@ -608,11 +641,45 @@ button {
     flex-wrap: wrap;
     gap: 20px;
     width: 80%;
-    margin: 120px auto 0 auto;
+    margin: 80px auto 120px auto;
 }
 .team-chart {
     border: 1px solid #d7d7d7;
     border-radius: 6px;
     padding: 17px 20px;
     background-color: #fff;
+}
+.about-btnGroup {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.about-btnItem {
+    width: 50%;
+    padding: 30px 35px;
+    border-radius: 12px;
+    border: 3px solid #e3e2de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #464343;
+}
+.about-btnItem .arr {
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+.about-btnItem:hover .pink-hover {
+    color: #ea645e;
+}
+.about-btnItem:hover .blue-hover {
+    color: #837ef2;
+}
+.about-btnItem:hover .arr {
+    transform: translateX(6px);
 }
