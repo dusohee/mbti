@@ -495,7 +495,7 @@ button {
     width: 50%;
     height: 100%;
     background-image: url("./images/about/planet-e.svg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -514,7 +514,7 @@ button {
     width: 50%;
     height: 100%;
     background-image: url("./images/about/planet-i.svg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -522,4 +522,26 @@ button {
     padding: 60px;
     align-items: center;
     justify-content: center;
+}
+
+/* 팀별 mbti 페이지 */
+.team-page {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 120px 0;
+    background-color: #f4f5fa;
+}
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    margin: 120px auto;
+}
+.team-chart {
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    padding: 17px 20px;
+    background-color: #fff;
 }
