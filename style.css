@@ -434,7 +434,7 @@ button {
     height: 100%;
 }
 .planet-e {
-    width: 50%;
+    width: 45%;
     height: 100%;
     background-image: url("./images/about/planet-e.svg");
     background-size: contain;
@@ -443,6 +443,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 .avatar-wrap {
     width: 70%;
@@ -453,17 +455,30 @@ button {
     justify-content: center;
 }
 .planet-i {
-    width: 50%;
+    width: 55%;
     height: 100%;
     background-image: url("./images/about/planet-i.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 60px;
     align-items: center;
     justify-content: center;
+}
+.about-e {
+    font-size: 26px;
+    color: #fff;
+    background-color: #26185c;
+}
+.about-i {
+    font-size: 26px;
+    color: #fff;
+    margin-right: 15%;
+    background-color: #26185c;
 }
 
 /* 팀별 mbti 페이지 */
