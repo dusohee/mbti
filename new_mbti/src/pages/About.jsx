@@ -34,7 +34,7 @@ function About() {
             <img
               src="/images/about/teamHei.svg"
               alt="ico"
-              width="55px"
+              className="about-icon"
             />
             <p className="pink-hover">우리팀 MBTI 구성은?</p>
           </div>
@@ -45,7 +45,7 @@ function About() {
             <img
               src="/images/about/blue-planet.svg"
               alt="ico"
-              width="60px"
+              className="about-icon"
             />
             <p className="blue-hover">화성에서 온 E, 금성에서 온 I</p>
           </div>

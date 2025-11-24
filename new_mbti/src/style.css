@@ -365,7 +365,7 @@ button {
 /* 6 */
 .infj {
     bottom: 3%;
-    right: 12%;
+    right: 4%;
 }
 /* 7 */
 .infp {
@@ -459,7 +459,6 @@ button {
 .mbti-message {
     padding: 16px 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
     font-size: 18px;
     position: absolute;
@@ -476,6 +475,59 @@ button {
 .mbti-message-area:hover .mbti-message {
     opacity: 1;
     visibility: visible;
+}
+
+/* MBTI별 메시지 색상 */
+.istj .mbti-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.isfj .mbti-message {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+.infj .mbti-message {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+.intj .mbti-message {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+.istp .mbti-message {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+.isfp .mbti-message {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+.infp .mbti-message {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+.intp .mbti-message {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+.estp .mbti-message {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+.esfp .mbti-message {
+    background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);
+}
+.enfp .mbti-message {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+.entp .mbti-message {
+    background: linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%);
+}
+.estj .mbti-message {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.esfj .mbti-message {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+}
+.enfj .mbti-message {
+    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+}
+.entj .mbti-message {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+.mola .mbti-message {
+    background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
 }
 .search-area {
     position: absolute;
@@ -649,6 +701,11 @@ button {
     padding: 17px 20px;
     background-color: #fff;
 }
+.team-chart img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .about-btnGroup {
     width: 1000px;
     display: flex;
@@ -659,6 +716,10 @@ button {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+.about-icon {
+    width: 55px;
+    height: auto;
 }
 .about-btnItem {
     width: 50%;
@@ -682,4 +743,368 @@ button {
 }
 .about-btnItem:hover .arr {
     transform: translateX(6px);
+}
+
+/* -------------반응형 디자인------------- */
+/* 태블릿 (1024px 이하) */
+@media (max-width: 1024px) {
+    /* Landing Page */
+    .prjTitle {
+        font-size: 70px;
+    }
+    .prjMenuGroup {
+        gap: 80px;
+    }
+    .prjMenuItem img {
+        width: 180px;
+        height: auto;
+    }
+    .prjMenuBtn {
+        width: 180px;
+        font-size: 32px;
+        padding: 4px 28px;
+    }
+
+    /* About Page */
+    .pageTitle {
+        font-size: 56px;
+    }
+    .beeker {
+        width: 60px;
+        height: auto;
+        left: -90px;
+    }
+    .chemical {
+        width: 100px;
+        height: auto;
+        right: -120px;
+    }
+    .overview-Result {
+        width: 90%;
+        padding: 35px;
+    }
+    .chart-result {
+        width: 100%;
+        height: auto;
+    }
+    .showResult {
+        max-width: 90%;
+        padding: 35px 40px;
+        gap: 40px;
+    }
+    .showCharac {
+        width: 250px;
+        height: 250px;
+    }
+    .characLarge {
+        width: 90px;
+        height: auto;
+    }
+    .aboutCharac {
+        width: 100%;
+    }
+    .about-icon {
+        width: 45px;
+        height: auto;
+    }
+    .mbtiChart {
+        width: 100%;
+    }
+
+    /* Town Map */
+    .searchBar {
+        width: 90%;
+        font-size: 22px;
+        padding: 14px 35px 14px 70px;
+    }
+    .sample-question {
+        font-size: 20px;
+    }
+    .home-btn {
+        width: 130px;
+    }
+
+    /* EvsI Page */
+    .planet-e,
+    .planet-i {
+        padding: 40px;
+    }
+    .about-e,
+    .about-i {
+        font-size: 22px;
+    }
+
+    /* Team Page */
+    .team-content {
+        width: 90%;
+    }
+    .about-btnGroup {
+        width: 90%;
+        flex-direction: column;
+    }
+    .about-btnItem {
+        width: 100%;
+    }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px) {
+    /* 기본 텍스트 크기 조정 */
+    h4 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 20px;
+    }
+    button {
+        font-size: 28px;
+    }
+
+    /* Landing Page */
+    .prjTitle {
+        font-size: 50px;
+    }
+    .fontRed {
+        letter-spacing: 4px;
+    }
+    .prjMenuGroup {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .prjMenuItem img {
+        width: 150px;
+        height: auto;
+    }
+    .prjMenuBtn {
+        width: 150px;
+        font-size: 26px;
+        padding: 3px 22px;
+    }
+
+    /* About Page */
+    .aboutPage {
+        padding: 80px 20px;
+        gap: 50px;
+    }
+    .pageTitle {
+        font-size: 40px;
+    }
+    .beeker {
+        width: 45px;
+        height: auto;
+        left: -60px;
+        top: -15px;
+    }
+    .chemical {
+        width: 70px;
+        height: auto;
+        right: -80px;
+        top: -25px;
+    }
+    .overview-Result {
+        width: 95%;
+        padding: 25px;
+    }
+    .chart-result {
+        width: 100%;
+        height: auto;
+    }
+    .summary-result {
+        font-size: 16px;
+    }
+    .showResult {
+        max-width: 95%;
+        padding: 25px;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .showCharac {
+        width: 200px;
+        height: 200px;
+    }
+    .characLarge {
+        width: 70px;
+        height: auto;
+    }
+    .aboutCharac {
+        width: 100%;
+        font-size: 18px;
+    }
+    .about-icon {
+        width: 35px;
+        height: auto;
+    }
+    .resultDetail {
+        gap: 20px;
+    }
+    .mbtiChart {
+        width: 100%;
+        height: 40px;
+    }
+    .label {
+        font-size: 32px;
+        width: 25px;
+    }
+    .bar {
+        font-size: 20px;
+    }
+    .per {
+        font-size: 20px;
+    }
+    .barChart {
+        gap: 15px;
+    }
+
+    /* Town Map */
+    .map-content {
+        min-width: 1200px;
+        min-height: 900px;
+    }
+    .search-area {
+        width: 90%;
+    }
+    .searchBar {
+        width: 100%;
+        font-size: 18px;
+        padding: 12px 30px 12px 60px;
+        border-radius: 30px;
+    }
+    .sample-question {
+        font-size: 16px;
+    }
+    .avatarImage {
+        width: 40px;
+        height: auto;
+    }
+    .avatarName {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+    .tag {
+        width: 70px;
+        height: auto;
+    }
+    .mbti-message {
+        font-size: 14px;
+        width: 220px;
+        padding: 12px 16px;
+    }
+    .home-btn {
+        width: 100px;
+        height: auto;
+    }
+
+    /* EvsI Page */
+    .EvsI-wrap {
+        flex-direction: column;
+    }
+    .planet-e,
+    .planet-i {
+        width: 100%;
+        height: 50vh;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    .about-e,
+    .about-i {
+        font-size: 18px;
+        padding: 15px 20px;
+        margin-right: 0;
+    }
+    .avatar-wrap {
+        width: 90%;
+        gap: 15px;
+    }
+
+    /* Team Page */
+    .team-page {
+        padding: 80px 20px;
+    }
+    .team-content {
+        width: 95%;
+        margin: 50px auto 80px auto;
+    }
+    .team-chart {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    .about-btnGroup {
+        width: 95%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .about-btnItem {
+        width: 100%;
+        padding: 20px 25px;
+        font-size: 20px;
+    }
+    .flex {
+        gap: 12px;
+    }
+}
+
+/* 작은 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    .prjTitle {
+        font-size: 36px;
+    }
+    .prjMenuItem img {
+        width: 120px;
+        height: auto;
+    }
+    .prjMenuBtn {
+        width: 120px;
+        font-size: 22px;
+    }
+    .pageTitle {
+        font-size: 32px;
+    }
+    .beeker {
+        width: 35px;
+        height: auto;
+        left: -45px;
+    }
+    .chemical {
+        width: 55px;
+        height: auto;
+        right: -60px;
+    }
+    .aboutPage {
+        padding: 60px 15px;
+    }
+    .showResult {
+        padding: 20px;
+    }
+    .showCharac {
+        width: 150px;
+        height: 150px;
+    }
+    .characLarge {
+        width: 55px;
+        height: auto;
+    }
+    .about-icon {
+        width: 28px;
+        height: auto;
+    }
+    .searchBar {
+        font-size: 16px;
+        padding: 10px 25px 10px 50px;
+    }
+    .avatarImage {
+        width: 35px;
+        height: auto;
+    }
+    .tag {
+        width: 60px;
+        height: auto;
+    }
+    .home-btn {
+        width: 80px;
+        height: auto;
+    }
 }
