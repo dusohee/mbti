@@ -1,6 +1,6 @@
 import Avatar from './Avatar';
 
-function MBTIGroup({ mbtiType, members, message, customAvatarStyle, isDefault }) {
+function MBTIGroup({ mbtiType, members, message, customAvatarStyle, isDefault, isHighlighted }) {
   return (
     <section className={`${mbtiType} town`}>
       {members.map((member, index) => (
@@ -20,7 +20,7 @@ function MBTIGroup({ mbtiType, members, message, customAvatarStyle, isDefault })
         {message && (
           <>
             {!isDefault && <span className="message-indicator"></span>}
-            <article className="mbti-message">
+            <article className={`mbti-message ${isHighlighted && isDefault ? 'always-visible' : ''}`}>
               {message}
             </article>
           </>

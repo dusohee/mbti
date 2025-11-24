@@ -12,6 +12,7 @@ function Town() {
     const [error, setError] = useState(null);
     const [sampleQuestions, setSampleQuestions] = useState([]);
     const [isDefaultMessage, setIsDefaultMessage] = useState(true);
+    const [highlightedMbti, setHighlightedMbti] = useState(null);
 
     const mbtiTypes = [
         "entp",
@@ -66,6 +67,10 @@ function Town() {
 
         // 기본 메시지 설정
         setMbtiMessages(defaultMessages);
+
+        // 랜덤으로 하나의 MBTI 선택하여 말풍선 표시
+        const randomIndex = Math.floor(Math.random() * mbtiTypes.length);
+        setHighlightedMbti(mbtiTypes[randomIndex]);
     }, []);
 
     // ENTJ와 ESTP는 특별한 이미지 스타일 필요
@@ -86,6 +91,7 @@ function Town() {
 
         setIsLoading(true);
         setError(null);
+        setHighlightedMbti(null); // 검색 시 랜덤 말풍선 숨기기
 
         try {
             const reactions = await fetchMBTIReactions(question);
@@ -105,6 +111,7 @@ function Town() {
         setQuestion(sampleQuestion);
         setIsLoading(true);
         setError(null);
+        setHighlightedMbti(null); // 검색 시 랜덤 말풍선 숨기기
 
         try {
             const reactions = await fetchMBTIReactions(sampleQuestion);
@@ -173,6 +180,7 @@ function Town() {
                         message={mbtiMessages[type]}
                         customAvatarStyle={getCustomStyle(type)}
                         isDefault={isDefaultMessage}
+                        isHighlighted={type === highlightedMbti}
                     />
                 ))}
 
