@@ -11,7 +11,8 @@ export const employees = {
     { name: '현서' },
     { name: '민보' },
     { name: '기찬' },
-    { name: '강현' }
+    { name: '강현' },
+    { name: '태하' }
   ],
   enfp: [
     { name: '상운' },
