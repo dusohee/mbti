@@ -402,7 +402,7 @@ button {
 .istj {
     top: 2%;
     left: 40%;
-    width: 180px;
+    width: 200px;
 }
 /* 13 */
 .istp {
@@ -448,10 +448,12 @@ button {
     box-shadow: 0 0 10px rgba(255, 68, 68, 0.8);
 }
 @keyframes blink {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(255, 68, 68, 0.8), 0 0 20px rgba(255, 68, 68, 0.4);
+        box-shadow: 0 0 10px rgba(255, 68, 68, 0.8),
+            0 0 20px rgba(255, 68, 68, 0.4);
     }
     25% {
         opacity: 0.3;
@@ -461,7 +463,8 @@ button {
     50% {
         opacity: 1;
         transform: scale(1.15);
-        box-shadow: 0 0 15px rgba(255, 68, 68, 1), 0 0 30px rgba(255, 68, 68, 0.6);
+        box-shadow: 0 0 15px rgba(255, 68, 68, 1),
+            0 0 30px rgba(255, 68, 68, 0.6);
     }
     75% {
         opacity: 0.3;
