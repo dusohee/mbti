@@ -32,6 +32,8 @@ export const employees = {
   estp: [
     { name: '병국' }
   ],
+  esfp: [],
+  esfj: [],
   infj: [
     { name: '오종' },
     { name: '희곤' },
