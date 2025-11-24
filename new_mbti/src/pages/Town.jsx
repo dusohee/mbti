@@ -158,6 +158,9 @@ function Town() {
                                 {q}
                             </div>
                         ))}
+                        <p className="guide-text">
+                            ❤️ 상황을 검색/클릭하고, 각 mbti 팻말에 마우스를 대면, 유형별 반응을 볼 수 있어요.
+                        </p>
                     </article>
                     {error && (
                         <div

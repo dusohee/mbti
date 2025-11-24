@@ -496,73 +496,57 @@ button {
     visibility: visible;
 }
 
-/* MBTI별 메시지 색상 */
+/* MBTI별 메시지 색상 - 검은 계통 배경 + 흰 글자 */
 .istj .mbti-message {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 }
 .isfj .mbti-message {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #252525 0%, #1f1f1f 100%);
 }
 .infj .mbti-message {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #1c1c1c 0%, #0f0f0f 100%);
 }
 .intj .mbti-message {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    background: linear-gradient(135deg, #2a2a2a 0%, #1d1d1d 100%);
 }
 .istp .mbti-message {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    background: linear-gradient(135deg, #1e1e1e 0%, #2c2c2c 100%);
 }
 .isfp .mbti-message {
-    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    background: linear-gradient(135deg, #212121 0%, #0d0d0d 100%);
 }
 .infp .mbti-message {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #2b2b2b 0%, #1b1b1b 100%);
 }
 .intp .mbti-message {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #1f1f1f 0%, #2e2e2e 100%);
 }
 .estp .mbti-message {
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #282828 0%, #1a1a1a 100%);
 }
 .esfp .mbti-message {
-    background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #232323 0%, #151515 100%);
 }
 .enfp .mbti-message {
-    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #262626 0%, #191919 100%);
 }
 .entp .mbti-message {
-    background: linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #242424 0%, #181818 100%);
 }
 .estj .mbti-message {
-    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #1d1d1d 0%, #2f2f2f 100%);
 }
 .esfj .mbti-message {
-    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
-    color: #333;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #292929 0%, #1c1c1c 100%);
 }
 .enfj .mbti-message {
-    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+    background: linear-gradient(135deg, #272727 0%, #121212 100%);
 }
 .entj .mbti-message {
-    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    background: linear-gradient(135deg, #222222 0%, #161616 100%);
 }
 .mola .mbti-message {
-    background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+    background: linear-gradient(135deg, #202020 0%, #0e0e0e 100%);
 }
 .search-area {
     position: absolute;
@@ -606,6 +590,12 @@ button {
 .sample-question:hover {
     cursor: pointer;
     color: #837ef2;
+}
+.guide-text {
+    font-size: 20px;
+    color: #666;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .home-btn {
@@ -855,6 +845,9 @@ button {
     .sample-question {
         font-size: 20px;
     }
+    .guide-text {
+        font-size: 18px;
+    }
     .home-btn {
         width: 130px;
     }
@@ -1011,6 +1004,10 @@ button {
     .sample-question {
         font-size: 16px;
     }
+    .guide-text {
+        font-size: 14px;
+        margin-top: 20px;
+    }
     .avatarImage {
         width: 40px;
         height: auto;
@@ -1129,6 +1126,10 @@ button {
     .searchBar {
         font-size: 16px;
         padding: 10px 25px 10px 50px;
+    }
+    .guide-text {
+        font-size: 12px;
+        margin-top: 15px;
     }
     .avatarImage {
         width: 35px;
